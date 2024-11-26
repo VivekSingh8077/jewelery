@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Purchase Form</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <h1>Purchase Jewelry</h1>
+    <form id="purchaseForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Amount:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="product">Transition Method:</label>
+        <select id="product" name="product" required>
+            <option value="ring">Ptm</option>
+            <option value="necklace">Bank</option>
+            <option value="bracelet">Cash on dilivery</option>
+        </select>
+
+        <button type="submit" onclick="purchase()">Purchase</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
